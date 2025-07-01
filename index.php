@@ -7,7 +7,10 @@ require_once 'Model/Utilisateur.php'; // Charge la classe Utilisateur
 $petitPrince = new Livre(); // Ceci est un objet issue de la classe Livre
 
 $petitPrince
-    ->setTitre('Le Petit Prince')
+    ->setNom('Le Petit Prince') // Méthode du parent Produit
+    ->setPrix(8) // Méthode du parent Produit
+    ->setDescription('Le petit princes est un roman') // Méthode du parent Produit
+    ->setCategorie('Fantastique') // Méthode du parent Produit
     ->setNbPage(128)
     ->setAuteur('Antoine de St-Exupéry')
     ->setEdition('Gallimard')
@@ -26,6 +29,8 @@ $bob
     ->setDateInscription(new \DateTime('1988-01-01')) // Les dates sont des objets
 ;
 
-echo '<h1>Le livre nommé ' . $petitPrince->getTitre() . ' est entre les mains de ' . $bob->getNom() . '.</h1>';
+echo '<h1>Le livre nommé ' . $petitPrince->getNom() . ' est entre les mains de ' . $bob->getNom() . '.</h1>';
 
-var_dump($petitPrince, $bob);
+echo '<h1>Le livre coûte ' . $petitPrince->getPrixEuro() . '</h1>';
+
+var_dump($petitPrince);

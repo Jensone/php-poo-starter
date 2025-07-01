@@ -1,33 +1,18 @@
 <?php
 
-class Livre 
+require_once 'Produit.php';
+
+/**
+ * Classe enfant de Produit, Livre représente 
+ * un livre dans l'application
+ */
+class Livre extends Produit
 {
     // Les propriétés de la classe (variables)
-    private string $titre;
     private int $nbPage;
     private string $auteur;
     private string $edition;
     private string $isbn = 'Non renseigné';
-
-    // Les méthodes de la classe (fonctions)
-    /**
-     * Récupèrer la valeur : titre
-     */ 
-    public function getTitre(): string
-    {
-        return $this->titre;
-    }
-
-    /**
-     * Muter la valeur : titre
-     * @return  self
-     */ 
-    public function setTitre(string $titre): Livre
-    {
-        $this->titre = $titre;
-
-        return $this;
-    }
 
     /**
      * Récupèrer la valeur : nbPage
