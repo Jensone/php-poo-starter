@@ -68,3 +68,18 @@ $bouquin
     //...
 ;
 ```
+
+## Le projet d'initiation
+
+Afin de prendre en main la POO, on créer une application simple de prise de notes : NoteBook.
+
+### Scénarios (User Stories)
+
+| Rôle (En tant que) | Action (Je veux)   | Résultat (Afin de) |
+| ---                | ---                | ---                |
+| Utilisateur        | Créer une note     | La conserver       |
+| Utilisateur        | Modifier une note  | La mettre à jour   |
+| Utilisateur        | Accéder à une note | La consulter       |
+| Utilisateur        | Supprimer une note | La détruire        |
+
+Grâce à cela, il est plus simple pour nous de comprendre les objectifs de notre application. Ce facilitera sa conception dans une approche plus réaliste.
