@@ -1,5 +1,7 @@
 # Premiers pas avec la POO
 
+Projet : https://drawsql.app/teams/agiliteach/diagrams/notebook
+
 La programmation orientée objet est basé sur un sytème qu'on appelle : les `classes`.
 
 Ces classes sont comme un moule (de cuisine) pour définir ce que représente quelque chose dans une application. Ce qui signifie que chaque application aura sa propre vision d'une classe qui porterai le même nom que celles que nous avons.
