@@ -3,7 +3,7 @@
 require_once 'Model/Livre.php'; // Charge la classe Livre
 require_once 'Model/Utilisateur.php'; // Charge la classe Utilisateur
 
-include 'Views/navbar.html.php'; // Inclut le navbar
+include 'Views/header.html.php'; // Inclut le header
 
 echo '<h1>En cours de conception</h1>';
 
