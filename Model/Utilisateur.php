@@ -1,16 +1,33 @@
 <?php
 
+namespace Model;
+
 class Utilisateur
 {
     // Les propriétés de la classe (variables)
+    private int $id;
     private string $nom;
     private string $email;
-    private string $identifiant;
-    private \DateTime $dateInscription;
+    private string $mot_de_passe;
+    private string $photo;
+
+    /**
+     * Le constructeur permet d'instancier la classe 
+     * avec des propriétés ou autre classe prédéfinie
+     */
+    public function __construct()
+    {
+        $this->photo = 'assets/img/user.png';
+    }
 
     // Les méthodes de la classe (fonctions)
+    public function getId(): string
+    {
+        return $this->id;
+    }
+    
     /**
-     * Get the value of nom
+     * Récupérer la valeur de : nom
      */ 
     public function getNom(): string
     {
@@ -18,7 +35,7 @@ class Utilisateur
     }
 
     /**
-     * Set the value of nom
+     * Muter la valeur de : nom
      * @return  self
      */ 
     public function setNom(string $nom): Utilisateur
@@ -29,7 +46,7 @@ class Utilisateur
     }
 
     /**
-     * Get the value of email
+     * Récupérer la valeur de : email
      */ 
     public function getEmail(): string
     {
@@ -37,7 +54,7 @@ class Utilisateur
     }
 
     /**
-     * Set the value of email
+     * Muter la valeur de : email
      *
      * @return  self
      */ 
@@ -49,40 +66,40 @@ class Utilisateur
     }
 
     /**
-     * Get the value of identifiant
+     * Récupérer la valeur de : mot_de_passe
      */ 
-    public function getIdentifiant(): string
+    public function getMotDePasse(): string
     {
-        return $this->identifiant;
+        return $this->mot_de_passe;
     }
 
     /**
-     * Set the value of identifiant
+     * Muter la valeur de : mot_de_passe
      *
      * @return  self
      */ 
-    public function setIdentifiant(string $identifiant): Utilisateur
+    public function setMotDePasse(string $mot_de_passe): Utilisateur
     {
-        $this->identifiant = $identifiant;
+        $this->mot_de_passe = $mot_de_passe;
 
         return $this;
     }
 
     /**
-     * Get the value of dateInscription
+     * Récupérer la valeur de : dateInscription
      */
-    public function getDateInscription(): \DateTime
+    public function getPhoto(): string
     {
-        return $this->dateInscription;
+        return $this->photo;
     }
 
     /**
-     * Set the value of dateInscription
+     * Muter la valeur de : photo
      * @return  self
      */
-    public function setDateInscription(\DateTime $dateInscription): Utilisateur
+    public function setPhoto(string $photo): Utilisateur
     {
-        $this->dateInscription = $dateInscription;
+        $this->photo = $photo;
 
         return $this;
     }
